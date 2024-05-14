@@ -30,7 +30,7 @@ router.get("/verifyuser/:token", async (req, res) => {
 
       res.write("<h1>user verified</h1>");
       res.write(
-        '<script>setTimeout(() => { window.location.href = "http://localhost/login"; }, 3000);</script>'
+        '<script>setTimeout(() => { window.location.href = "https://shop4-u-delta.vercel.app//login"; }, 3000);</script>'
       );
       res.end();
     } else {
