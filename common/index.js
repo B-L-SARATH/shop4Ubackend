@@ -8,8 +8,8 @@ import User from "../models/user.js";
 const __dirname = path.dirname(fileURLToPath(import.meta.url)); //we need use this when we use es6 module
 const defaultClient = sibMailService.ApiClient.instance;
 const apiKey = defaultClient.authentications["api-key"];
-// apiKey.apiKey = process.env.SENDINBLUE_API_KEY;
-apiKey.apiKey = "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";
+apiKey.apiKey = process.env.SENDINBLUE_API_KEY;
+
 
 const sendVerificationEmail = async (name, email, subject, filename) => {
   const apiInstance = new sibMailService.TransactionalEmailsApi();
