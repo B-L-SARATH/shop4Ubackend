@@ -14,12 +14,12 @@ const app = express();
 connectDB();
 
 app.use(express.json());
-// app.use(cors());
-app.use(
-  cors({
-    origin: "http://localhost:5173", // or '*' to allow from all origins
-  })
-);
+app.use(cors());
+// app.use(
+//   cors({
+//     origin: "http://localhost:5173", // or '*' to allow from all origins
+//   })
+// );
 
 //serving static files
 const __dirname = path.resolve();
